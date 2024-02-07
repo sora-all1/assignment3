@@ -150,8 +150,7 @@ point.addEventListener("click", () =>{
       ;
     }else if (condition.includes(mark)){
       
-      if (second == ""){
-      }else{
+      if (second){
         second += ".";
         display.textContent = first + mark + second;
       }
@@ -160,7 +159,7 @@ point.addEventListener("click", () =>{
   }else if (condition.includes(mark)){
     second += ".";
     display.textContent = first + mark + second;
-  }else{
+  }else if (first){
     first += ".";
     display.textContent = first;
   }
