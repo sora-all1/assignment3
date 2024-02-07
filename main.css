@@ -1,0 +1,19 @@
+#display{
+    background-color: black;
+    margin: 0;
+    width: 312px;
+    height: 30px;
+    padding-top: 4px;
+    padding-right: 4px;
+    color: #fff;
+    text-align: right;
+}
+
+input{
+    width: 75px;
+    text-align: center;
+}
+
+#last-line>input{
+    width: 155.5px;
+}
