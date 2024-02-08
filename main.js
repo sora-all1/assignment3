@@ -16,9 +16,15 @@ let numberButton = () => {
   number = document.getElementById(id).value;
   if (condition.includes(mark)){
     second += number;
+    second = Number(second);
+    second = String(second);
     display.textContent = first + mark + second;
-  } else {
+  } else if(mark == "!"){
+    ;
+  }else{
     first += number;
+    first = Number(first);
+    first = String(first);
     display.textContent = first;
   }
 }
@@ -179,7 +185,7 @@ equal.addEventListener("click", () =>{
   display.textContent = resultDecimal;
   first = String(resultDecimal);
   second = "";
-  mark ="";
+  mark = "!";
 }else{
   display.textContent = first;
 }
